@@ -37,12 +37,7 @@ class MovieFormViewController: UIViewController {
     }
     
     @IBAction func saveMovie(_ sender: Any) {
-        let newMovie = Movie(
-            name: self.tfMovieName.text,
-            score: Int(self.lbMovieScore.text),
-            oscarNominated: self.swOscarNominee.isOn,
-            timesWatched: Int(self.stTimesWatched.value)
-        )
+        let newMovie = Movie(name: self.tfMovieName.text!, score: Int(self.slMovieScore.value), oscarNominated: self.swOscarNominee.isOn, timesWatched: Int(self.stTimesWatched.value))
         print(newMovie)
     }
     /*
