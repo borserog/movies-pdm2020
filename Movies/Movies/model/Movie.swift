@@ -21,10 +21,10 @@ class Movie: NSObject {
     }
     
     override var description: String {
-        return "NAME: \(self.name)" +
-        "SCORE: \(self.score)" +
-            "NOMINATED: \(self.oscarNominated)" +
-            "TIMES WATCHED: \(self.timesWatched)"
+        return "NAME: \(self.name)\n" +
+        "SCORE: \(self.score)\n" +
+            "NOMINATED: \(self.oscarNominated)\n" +
+            "TIMES WATCHED: \(self.timesWatched)\n"
         
     }
 }
